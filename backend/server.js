@@ -10,6 +10,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/products', require('./routes/sanpham'));
+app.use('/api/auth',     require('./routes/auth'));
 
 // Health check
 app.get('/', (req, res) => {
